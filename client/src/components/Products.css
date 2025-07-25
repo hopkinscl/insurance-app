@@ -1,0 +1,279 @@
+.products-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 16px;
+}
+
+.section-header p {
+  font-size: 18px;
+  color: #64748b;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.product-card {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #16a34a, #15803d);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover::before {
+  transform: scaleX(1);
+}
+
+.product-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 16px;
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.features-list {
+  list-style: none;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.features-list li {
+  padding: 8px 0;
+  color: #374151;
+  font-size: 14px;
+  position: relative;
+  padding-left: 24px;
+}
+
+.features-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.bundle-offer {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  border-radius: 16px;
+  padding: 48px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.bundle-offer::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.bundle-content {
+  position: relative;
+  z-index: 1;
+}
+
+.bundle-offer h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.bundle-offer p {
+  font-size: 18px;
+  margin-bottom: 24px;
+  opacity: 0.9;
+}
+
+.bundle-offer .btn-primary {
+  background: white;
+  color: #16a34a;
+  font-weight: 600;
+  padding: 14px 32px;
+  font-size: 16px;
+}
+
+.bundle-offer .btn-primary:hover {
+  background: #f1f5f9;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .products-section {
+    padding: 60px 0;
+  }
+  
+  .section-header {
+    margin-bottom: 48px;
+  }
+  
+  .section-header h2 {
+    font-size: 28px;
+  }
+  
+  .section-header p {
+    font-size: 16px;
+  }
+  
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+  
+  .product-card {
+    padding: 24px;
+  }
+  
+  .product-icon {
+    font-size: 40px;
+    height: 50px;
+    margin-bottom: 16px;
+  }
+  
+  .product-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .product-card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .features-list {
+    margin-bottom: 24px;
+  }
+  
+  .features-list li {
+    font-size: 13px;
+    padding: 6px 0;
+  }
+  
+  .bundle-offer {
+    padding: 32px 24px;
+  }
+  
+  .bundle-offer h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  
+  .bundle-offer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .bundle-offer .btn-primary {
+    padding: 12px 24px;
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-section {
+    padding: 40px 0;
+  }
+  
+  .section-header h2 {
+    font-size: 24px;
+  }
+  
+  .product-card {
+    padding: 20px;
+  }
+  
+  .product-icon {
+    font-size: 36px;
+    height: 45px;
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+  }
+  
+  .bundle-offer {
+    padding: 24px 20px;
+  }
+  
+  .bundle-offer h3 {
+    font-size: 20px;
+  }
+  
+  .bundle-offer p {
+    font-size: 14px;
+  }
+}
