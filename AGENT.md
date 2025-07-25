@@ -1,4 +1,4 @@
-# Agent Instructions for SecureLife Insurance App
+# Agent Instructions for Alpine Guard Insurance App
 
 ## Development Commands
 

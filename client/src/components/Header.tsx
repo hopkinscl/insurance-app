@@ -6,7 +6,7 @@ const Header: React.FC = () => {
     <header className="header">
       <div className="container">
         <div className="logo">
-          <h1>SecureLife Insurance</h1>
+          <h1>Alpine Guard Insurance</h1>
         </div>
         <nav className="nav">
           <ul>

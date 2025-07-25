@@ -1,4 +1,4 @@
-# SecureLife Insurance - Full Stack Web Application
+# Alpine Guard Insurance - Full Stack Web Application
 
 A modern, responsive insurance company website built with React and Express.js.
 

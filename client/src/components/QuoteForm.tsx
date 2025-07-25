@@ -65,7 +65,7 @@ const QuoteForm: React.FC = () => {
       });
       
       if (response.ok) {
-        alert('Quote request submitted successfully! We will contact you soon.');
+        alert('Quote request submitted successfully! Alpine Guard will contact you soon.');
         setFormData({
           insuranceType: '',
           zipCode: '',

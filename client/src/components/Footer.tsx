@@ -7,12 +7,12 @@ const Footer: React.FC = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>SecureLife Insurance</h3>
+            <h3>Alpine Guard Insurance</h3>
             <p>Protecting what matters most to you and your family for over 50 years.</p>
             <div className="contact-info">
-              <p>📞 1-800-SECURE-1</p>
-              <p>✉️ info@securelife.com</p>
-              <p>📍 123 Insurance Way, Protection City, PC 12345</p>
+              <p>📞 1-800-ALPINE-1</p>
+              <p>✉️ info@alpineguard.com</p>
+              <p>📍 123 Mountain View Drive, Alpine Valley, AV 12345</p>
             </div>
           </div>
           
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="footer-copyright">
-          <p>&copy; 2024 SecureLife Insurance Company. All rights reserved.</p>
+          <p>&copy; 2024 Alpine Guard Insurance Company. All rights reserved.</p>
           <p>Licensed in all 50 states. NAIC Company Code: 12345</p>
         </div>
       </div>
