@@ -21,7 +21,7 @@ const Header: React.FC = () => {
         </nav>
         <div className="header-actions">
           <button className="btn-secondary">Login</button>
-          <button className="btn-primary">Get Quote</button>
+          <a href="#quote" className="btn-primary">Get Quote</a>
         </div>
       </div>
     </header>

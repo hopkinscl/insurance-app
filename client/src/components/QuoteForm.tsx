@@ -352,10 +352,17 @@ const QuoteForm: React.FC = () => {
                   </button>
                   <button
                     type="submit"
-                    className="btn-primary"
+                    className={`btn-primary ${isSubmitting ? 'loading' : ''}`}
                     disabled={isSubmitting}
                   >
-                    {isSubmitting ? 'Submitting...' : 'Get My Quote'}
+                    {isSubmitting ? (
+                      <span className="loading-content">
+                        <span className="loading-spinner"></span>
+                        Processing Quote...
+                      </span>
+                    ) : (
+                      'Get My Quote'
+                    )}
                   </button>
                 </div>
               </div>
