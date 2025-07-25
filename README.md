@@ -1,6 +1,6 @@
 # SecureLife Insurance - Full Stack Web Application
 
-A modern, responsive insurance company website built with React and Express.js, inspired by Nationwide's design and functionality.
+A modern, responsive insurance company website built with React and Express.js.
 
 ## Features
 
