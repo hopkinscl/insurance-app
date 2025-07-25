@@ -47,7 +47,7 @@ const QuoteForm: React.FC = () => {
 
   const handlePrevStep = () => {
     if (step > 1) {
-      setStep(step - 1);
+      setStep(step + 1);
     }
   };
 
